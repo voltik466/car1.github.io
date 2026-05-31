@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мир автомобилей</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin:20px 0;
+}
+
+nav a{
+    margin-right:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+img{
+    max-width:500px;
+    border-radius:10px;
+}
+
+button{
+    padding:10px;
+    margin-right:10px;
+}
+</style>
+
+<script>
+function welcomeUser(){
+    let name = prompt("Введите ваше имя");
+
+    if(name){
+        document.getElementById("result").innerHTML =
+        "Добро пожаловать, " + name + "!";
+    }
+}
+
+function favoriteCar(){
+    let car = prompt("Какая ваша любимая марка автомобиля?");
+
+    if(car){
+        alert("Отличный выбор! " + car + " — популярный автомобиль.");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Мир автомобилей</h1>
+<p>Автор: Байбурдин Владислав, группа ИТ-107</p>
+</header>
+
+<nav>
+<a href="history.html">История</a>
+<a href="brands.html">Марки</a>
+<a href="sport.html">Спортивные авто</a>
+<a href="electric.html">Электромобили</a>
+<a href="gallery.html">Галерея</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+
+<div class="card">
+<h2>Добро пожаловать!</h2>
+
+<button onclick="welcomeUser()">Приветствие</button>
+<button onclick="favoriteCar()">Любимая марка</button>
+
+<p id="result"></p>
+
+<p>
+Автомобиль — одно из самых важных изобретений человечества.
+Сегодня существуют тысячи моделей для разных целей и задач.
+</p>
+</div>
+
+<div class="card">
+<h2>Переход через изображение</h2>
+
+<a href="gallery.html">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+</a>
+
+<p>Нажмите на изображение для перехода в галерею.</p>
+
+</div>
+
+</body>
+</html>
